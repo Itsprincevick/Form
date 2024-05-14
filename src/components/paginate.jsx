@@ -11,7 +11,7 @@ const Paginate = () => {
   const cards = [
     // Define an array of cards
     {
-      key: 1,
+      key: 1, 
       image: Bulb, // Image for the first card
       logo: Foundeet, // Logo for the first card
       title: "Device flows stroke frame library flows ellipse", // Title for the first card
