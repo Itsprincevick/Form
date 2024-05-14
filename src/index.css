@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+input[type="radio"] {
+  /* Remove default radio button appearance */
+  appearance: none;
+  /* Set border and fill color */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  /* Set size */
+  width: 10px;
+  height: 10px;
+  /* Add a transition for smooth color change */
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+}
+
+input[type="radio"]:checked {
+  /* Change border and fill color when checked */
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
