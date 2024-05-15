@@ -1,4 +1,4 @@
-import Paginate from "../components/paginate.jsx";
+import Paginate from "./paginate.jsx";
 
 function Form() {
     return (
