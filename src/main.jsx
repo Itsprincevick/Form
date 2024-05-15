@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import Form from "./components/Form.jsx";
+import Form from "./components/form.jsx";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
