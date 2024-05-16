@@ -1,12 +1,11 @@
 import Paginate from "../components/paginate.jsx";
+import SignIn from "../components/SignIn.jsx";
 
 function Form() {
     return (
         <div className=" flex justify-center items-center p-1 ">
           <Paginate />
-          <div className="h-screen w-1/2">
-            
-          </div>
+          <SignIn/>
         </div>
       );
 } 
