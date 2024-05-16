@@ -12,11 +12,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/form" element={<Form />}
+          <Route path="/form" element={<Form />}>
 
-            //input the route for the form pages in here {DELETE THIS COMMENT AFTER}
+            {/* //input the route for the form pages in here {DELETE THIS COMMENT AFTER} */}
             
-          />
+          </Route>
           <Route path="/ErrorBoundary" element={<ErrorBoundary />} />
         </Routes>
       </Router>
