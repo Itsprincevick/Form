@@ -7,11 +7,11 @@ import { ChevronLeftIcon } from "@heroicons/react/20/solid";
 
 const ResetLinkPage = () => {
   return (
-    <form className="flex flex-col justify-center items-center h-screen text-center relative gap-5">
+    <form className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5">
 
       {/*Tot-left back Icon... */}
       <Link to="/">
-       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-0 left-0" />
+       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-3 -left-10" />
       </Link>
 
       {/* message icon... */}

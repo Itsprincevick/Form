@@ -8,8 +8,8 @@ export default {
    
     extend: {
       colors: {
-        "blue-1": "##e7eef6",
-         "blue-2": "##c5d6e9",
+        "blue-1": "#e7eef6",
+         "blue-2": "#c5d6e9",
          "blue-3": "#97b5d7",
          "blue-4": "#6693c5",
          "blue-5": "#3872b4",

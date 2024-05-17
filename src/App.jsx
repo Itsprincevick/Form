@@ -1,13 +1,14 @@
-import React from "react";
-//import "../dist/main.css";
+
 import "../src/index.css";
-import Form from "./components/form.jsx";
+import Paginate from "./components/paginate.jsx";
 
 const App = () => {
     return (
-        <div>
-        <Form />
-        </div>
+        <div className="min-h-screen w-1/2">
+      <Paginate />
+
+      
+    </div>
     );
 };
 
