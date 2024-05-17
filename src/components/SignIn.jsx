@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 const SignIn = () => {
   return (
     <div className="h-screen w-1/2  ">
@@ -55,7 +55,7 @@ const SignIn = () => {
             </svg>
           </div>
           <div className="text-right text-green-6 mt-2 text-xs">
-            <a href="http://">Forget Password?</a>
+            <Link to="/createNewPassword">Forget Password?</Link>
           </div>
           <button
             type="submit"
