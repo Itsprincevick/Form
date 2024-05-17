@@ -27,7 +27,7 @@ const CreateNewPassword = () => {
   };
 
   return (
-    <div className="text-center w-1/2 mt-16 ">
+    <div className="text-center w-1/2 flex flex-col items-center mt-20 ">
       <div className=" w-[460px]">
           <h1 className="font-medium text-4xl text-blue-10">
             Create a New Password

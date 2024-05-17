@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <ErrorBoundary>
-        <div className="flex">
+        <div className="flex px-24">
           <App />
           <Routes>
             <Route path="/" element={<CreateNewPassword />} />
