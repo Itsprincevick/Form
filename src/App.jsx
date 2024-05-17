@@ -1,3 +1,4 @@
+
 import "../src/index.css";
 import Paginate from "./components/paginate.jsx";
 
@@ -12,3 +13,4 @@ const App = () => {
 };
 
 export default App;
+
