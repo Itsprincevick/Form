@@ -1,12 +1,13 @@
-import React from "react";
+
 import GoogleLogoIcon from "../assets/icons/Google.svg";
 import ApplelogoIcon from "../assets/icons/apple_logo_icon.svg";
 import FacebookLogoIcon from "../assets/icons/circle-facebook.svg";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
-    <div className="flex min-h-screen justify-center items-center  py-2">
-      <div className="max-w-md w-full space-y-6">
+    <div className="h-screen w-1/2 flex items-center">
+      <div className=" w-[65%] mx-auto">
         <div>
           <h2 className="mt-1 text-center text-4xl font-medium text-blue-10">
             Create an Account
@@ -15,10 +16,12 @@ function SignUp() {
             Bold underline draft ipsum background. Background plugin figja
           </p>
           <div className="w-full h-full bg-blue-1 rounded-lg p-1">
-            <button className="w-1/2 text-center h-full">Sign In</button>
-            <button className="w-1/2 text-center h-11 bg-white rounded-md">
-              Sign Up
-            </button>
+            <Link to="/"><button className="w-1/2 text-center h-full">Sign In</button></Link>
+            <Link to="/SignUp">
+              <button className="w-1/2 text-center h-11 bg-white rounded-md">
+                Sign Up
+              </button>
+            </Link>
           </div>
         </div>
         <form className="mt-2 space-y-2">

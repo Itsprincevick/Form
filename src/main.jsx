@@ -5,6 +5,7 @@ import "./index.css";
 
 import CreateNewPassword from "./components/createNewPassword.jsx";
 import SignIn from "./components/SignIn.jsx"
+import SignUp from "./components/SignUp.jsx";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ResetLinkPage from './components/ResetLinkPage.jsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <App />
           <Routes>
             <Route path="/" element={<SignIn/>} />
+            <Route path="/SignUp" element={<SignUp />} />
             <Route path="/createNewPassword" element={<CreateNewPassword />} />
             <Route path="/ResetLinkPage" element={<ResetLinkPage />} />
             <Route path="/ErrorBoundary" element={<ErrorBoundary />} />

@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 const SignIn = () => {
   return (
-    <div className="h-screen w-1/2  ">
-      <div className=" w-[80%] mx-auto">
+    <div className="h-screen w-1/2 flex items-center">
+      <div className=" w-[65%] mx-auto">
         <h3 className=" space-y-56 text-blue-10 text-4xl text-center font-medium mt-8">
           Welcome Back
         </h3>
-        <p className="text-lg text-center text-grey-4 mt-3">
+        <p className="text-sm text-center text-grey-4 mt-3">
           Bold Underline draft ipsum background.Backgroung plugin jsd
         </p>
-        <div className="flex justify-between px-7 mt-5 w-[100%] bg-blue-1 rounded-xl">
-          <button className=" border-grey px-12 py-3">Sign In</button>
-          <button className=" border-grey px-12 py-3 bg-blue-1 ">
-            Sign Up
-          </button>
-        </div>
+        <div className="w-full h-[52px] bg-blue-1 rounded-lg p-1 mt-3">
+            <Link to="/"><button className="w-1/2 text-center h-11 bg-white rounded-md">Sign In</button></Link>
+            <Link to="/SignUp">
+              <button className="w-1/2 text-center h-11">
+                Sign Up
+              </button>
+            </Link>
+          </div>
         <form className="mt-5">
           <label htmlFor="email" className="text-blue-10 font-semibold">
             Email Address
@@ -66,7 +68,7 @@ const SignIn = () => {
         </form>
         <div className="flex mt-6 items-center text-grey-3">
           <hr className="w-[37%] border-1" />
-          <p className="mx-1 ">Or Continue With</p>
+          <p className="mx-1 text-xs">Or Continue With</p>
           <hr className="w-[37%] border-1" />
         </div>
 
