@@ -26,49 +26,52 @@ function SignUp() {
         </div>
         <form className="mt-2 space-y-2">
           <div className="flex flex-col">
-            <label className="font-medium text-blue-950">Name</label>
+            <label className="text-blue-10 font-semibold">Name</label>
             <input
               id="name"
               type="text"
               placeholder="Enter Name here"
-              className="my-1 p-3 border-grey-5 border rounded-lg"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
               required
             />
           </div>
           <div className="flex flex-col">
-            <label className="font-medium text-blue-950">Email Address</label>
+            <label className="text-blue-10 font-semibold">Email Address</label>
             <input
               id="email"
               type="email"
               placeholder="Enter Email Address here"
-              className="my-1 p-3 border-grey-5 border rounded-lg"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
               required
             />
           </div>
           <div className="flex flex-col">
-            <label className="font-medium text-blue-950">Password</label>
+            <label className="text-blue-10 font-semibold">Password</label>
             <input
               id="password"
               type="password"
               placeholder="Enter your Password"
-              className="my-1 p-3 border-grey-5 border rounded-lg"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
               required
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="font-medium text-blue-950">
+            <label className="text-blue-10 font-semibold">
               Confirm Password
             </label>
             <input
               id="password"
               type="password"
               placeholder="Confirm your Password"
-              className="w-full my-1 p-3 border-grey-5 border rounded-lg"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
               required
             />
           </div>
-          <button className="btn  w-full my-4 font-medium px-20 py-2 border-2 border-spacing-0 border-blue-100 border-l-0 bg-blue-950 rounded-lg text-white">
+          <button
+            type="submit"
+            className="w-full border-2 rounded-xl px-3 py-3 mt-6 text-center bg-blue-10 text-white "
+          >
             Sign Up
           </button>
           <div className="flex items-center justify-center my-4">
