@@ -72,7 +72,7 @@ const Paginate = () => {
   return (
     // Return the JSX for the Paginate component
     <div className="flex flex-col items-center h-screen">
-      <div className="flex justify-center items-center relative h-full">
+      <div className="flex justify-center items-center relative mt-3">
         {cards.slice(startIndex, endIndex).map(
           (
             card // Slice the cards array based on the current page and map over it
@@ -97,7 +97,7 @@ const Paginate = () => {
         ))}
       </div>
       <div
-        className="flex justify-center items-center gap-2 absolute top-[680px] left-[334px]"
+        className="flex justify-center items-center gap-2 absolute top-[668px] left-[334px]"
         style={{ width: "205px", height: "41px" }}
       >
         <button

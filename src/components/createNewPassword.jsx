@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/16/solid";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CreateNewPassword = () => {
   const [password, setPassword] = useState("");
@@ -27,7 +28,12 @@ const CreateNewPassword = () => {
   };
 
   return (
-    <div className="text-center w-1/2 flex flex-col items-center mt-20 ">
+    <motion.div className="text-center w-1/2 flex flex-col items-center  mt-20"
+    initial={{opacity: 0, x:0}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0.75, x: 0}}
+    transition={{duration: 1.5}}
+    >
       <div className=" w-[460px]">
           <h1 className="font-medium text-4xl text-blue-10">
             Create a New Password
@@ -39,7 +45,7 @@ const CreateNewPassword = () => {
       <form onSubmit={handleSubmit} className="flex flex-col text-blue-10 mt-9 w-[460px] ">
         <label className="block text-left relative">
           Password
-          <input className="w-full border-grey-3 border rounded-xl h-10 my-2 p-3 text-sm"
+          <input className="w-full border-grey-3 border rounded-xl h-10 my-2 p-3 text-sm outline-none"
             type="password"
             value={password}
             onChange={handlePasswordChange}
@@ -49,7 +55,7 @@ const CreateNewPassword = () => {
         </label>
         <label className="block text-left relative">
           Confirm Password
-          <input className="w-full border border-grey-3 rounded-xl h-10 my-2 p-3 text-sm"
+          <input className="w-full border border-grey-3 rounded-xl h-10 my-2 p-3 text-sm outline-none"
             type="password"
             value={confirmPassword}
             onChange={handleConfirmPasswordChange}
@@ -60,7 +66,7 @@ const CreateNewPassword = () => {
 
         <Link to="/ResetLinkPage"><button className="text-white w-full h-10 bg-blue-10 rounded-xl mt-3" type="submit">Reset Password</button></Link>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

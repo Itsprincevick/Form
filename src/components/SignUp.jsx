@@ -3,10 +3,16 @@ import GoogleLogoIcon from "../assets/icons/Google.svg";
 import ApplelogoIcon from "../assets/icons/apple_logo_icon.svg";
 import FacebookLogoIcon from "../assets/icons/circle-facebook.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SignUp() {
   return (
-    <div className="h-screen w-1/2 flex items-center">
+    <motion.div className="h-screen w-1/2 flex items-center"
+    initial={{opacity: 0, x:0}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0.75, x: 0}}
+    transition={{duration: 1.5}}
+    >
       <div className=" w-[65%] mx-auto">
         <div>
           <h2 className="mt-1 text-center text-4xl font-medium text-blue-10">
@@ -31,7 +37,7 @@ function SignUp() {
               id="name"
               type="text"
               placeholder="Enter Name here"
-              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2 outline-none"
               required
             />
           </div>
@@ -41,7 +47,7 @@ function SignUp() {
               id="email"
               type="email"
               placeholder="Enter Email Address here"
-              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2 outline-none"
               required
             />
           </div>
@@ -51,7 +57,7 @@ function SignUp() {
               id="password"
               type="password"
               placeholder="Enter your Password"
-              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2 outline-none"
               required
             />
           </div>
@@ -64,7 +70,7 @@ function SignUp() {
               id="password"
               type="password"
               placeholder="Confirm your Password"
-              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2 outline-none"
               required
             />
           </div>
@@ -81,19 +87,19 @@ function SignUp() {
           </div>
 
           <div className="flex items-center justify-center gap-5">
-            <img src={GoogleLogoIcon} alt="google logo" className="w-14 h-14" />
+            <img src={GoogleLogoIcon} alt="google logo" className="w-14 h-14 cursor-pointer" />
 
-            <img src={ApplelogoIcon} alt="apple logo" className="w-14 h-14" />
+            <img src={ApplelogoIcon} alt="apple logo" className="w-14 h-14 cursor-pointer" />
 
             <img
               src={FacebookLogoIcon}
               alt="facebook logo"
-              className="w-14 h-14"
+              className="w-14 h-14 cursor-pointer"
             />
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

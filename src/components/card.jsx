@@ -5,7 +5,7 @@ const Card = ({ image, logo, title, description, name }) => {
 
   return (
     <div
-      className="w-[596px] h-[712px] bg-contain bg-no-repeat relative"
+      className="w-[540px] h-[712px] bg-contain bg-no-repeat relative"
       style={{ backgroundImage: `url(${image})` }}
     >
       <img

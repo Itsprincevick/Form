@@ -1,7 +1,17 @@
+import GoogleLogoIcon from "../assets/icons/Google.svg";
+import ApplelogoIcon from "../assets/icons/apple_logo_icon.svg";
+import FacebookLogoIcon from "../assets/icons/circle-facebook.svg";
+import { LockClosedIcon } from "@heroicons/react/16/solid";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const SignIn = () => {
   return (
-    <div className="h-screen w-1/2 flex items-center">
+    <motion.div className="h-screen w-1/2 flex items-center"
+    initial={{opacity: 0, x:0}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0.75, x: 0}}
+    transition={{duration: 1.5}}
+    >
       <div className=" w-[65%] mx-auto">
         <h3 className=" space-y-56 text-blue-10 text-4xl text-center font-medium mt-8">
           Welcome Back
@@ -26,7 +36,7 @@ const SignIn = () => {
             id="Email"
             name="Email"
             placeholder="Enter Email Address here"
-            className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2"
+            className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 mb-2 outline-none"
             required
           />
           <label htmlFor="password" className="text-blue-10 font-semibold">
@@ -38,26 +48,13 @@ const SignIn = () => {
               id="password"
               name="password"
               placeholder="Enter your Password"
-              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2"
+              className="w-full border-2 border-grey rounded-xl px-3 py-2 mt-2 outline-none"
               required
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="absolute top-5 right-4 w-4 h-4 text-grey-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
-              />
-            </svg>
+           <LockClosedIcon  className="absolute top-5 right-4 w-4 h-4 text-grey-3"/>
           </div>
           <div className="text-right text-green-6 mt-2 text-xs">
-            <Link to="/createNewPassword">Forget Password?</Link>
+            <Link to="/ResetPassword">Forget Password?</Link>
           </div>
           <button
             type="submit"
@@ -66,15 +63,25 @@ const SignIn = () => {
             Sign In
           </button>
         </form>
-        <div className="flex mt-6 items-center text-grey-3">
-          <hr className="w-[37%] border-1" />
-          <p className="mx-1 text-xs">Or Continue With</p>
-          <hr className="w-[37%] border-1" />
-        </div>
+        <div className="flex items-center justify-center my-4">
+            <div className="border-t border-grey-3 flex-grow mr-3"></div>
+            <p className="text-center text-grey-3">Or continue with</p>
+            <div className="border-t border-grey-3 flex-grow ml-3"></div>
+          </div>
 
-        {/* social media icons */}
+          <div className="flex items-center justify-center gap-5">
+            <img src={GoogleLogoIcon} alt="google logo" className="w-14 h-14 cursor-pointer" />
+
+            <img src={ApplelogoIcon} alt="apple logo" className="w-14 h-14 cursor-pointer" />
+
+            <img
+              src={FacebookLogoIcon}
+              alt="facebook logo"
+              className="w-14 h-14 cursor-pointer"
+            />
+          </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

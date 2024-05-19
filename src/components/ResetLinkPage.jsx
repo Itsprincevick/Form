@@ -4,14 +4,20 @@ import React from "react"; // Importing React from react
 import { Link } from "react-router-dom"; // Importing Link from react-router-dom
 import Message from "../assets/Message.svg"
 import { ChevronLeftIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 
 const ResetLinkPage = () => {
   return (
-    <form className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5">
+    <motion.div className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5"
+    initial={{opacity: 0, x:0}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0.75, x: 0}}
+    transition={{duration: 1.5}}
+    >
 
       {/*Tot-left back Icon... */}
-      <Link to="/">
-       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-3 -left-10" />
+      <Link to="/ResetPassword">
+       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-1 left-12" />
       </Link>
 
       {/* message icon... */}
@@ -35,7 +41,7 @@ const ResetLinkPage = () => {
         Go back Home
       </Link>
       
-    </form>
+    </motion.div>
   );
 };
 
