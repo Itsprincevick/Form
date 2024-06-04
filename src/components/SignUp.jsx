@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 function SignUp() {
   return (
     <motion.div className="h-screen w-1/2 flex items-center"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
+    initial={{opacity: 0.3}}
+    animate={{opacity: 1}}
+    exit={{opacity: 1}}
     transition={{duration: 1.5}}
     >
       <div className=" w-[65%] mx-auto">

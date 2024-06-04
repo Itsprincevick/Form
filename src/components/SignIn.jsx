@@ -3,13 +3,13 @@ import ApplelogoIcon from "../assets/icons/apple_logo_icon.svg";
 import FacebookLogoIcon from "../assets/icons/circle-facebook.svg";
 import { LockClosedIcon } from "@heroicons/react/16/solid";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 const SignIn = () => {
   return (
-    <motion.div className="h-screen w-1/2 flex items-center"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
+    <m.div className="h-screen w-1/2 flex items-center"
+    initial={{opacity: 0.3}}
+    animate={{opacity: 1}}
+    exit={{opacity: 1}}
     transition={{duration: 1.5}}
     >
       <div className=" w-[65%] mx-auto">
@@ -81,7 +81,7 @@ const SignIn = () => {
             />
           </div>
       </div>
-    </motion.div>
+    </m.div>
   );
 };
 

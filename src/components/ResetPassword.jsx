@@ -1,13 +1,13 @@
 import { ChevronLeftIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const ResetPassword = () => {
   return (
-    <motion.div className="flex flex-col items-center w-1/2 h-screen text-center relative"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
+    <m.div className="flex flex-col items-center w-1/2 h-screen text-center relative"
+    initial={{opacity: 0.3}}
+    animate={{opacity: 1}}
+    exit={{opacity: 1}}
     transition={{duration: 1.5}}
     >
       <div className="mt-20">
@@ -27,7 +27,7 @@ const ResetPassword = () => {
           <Link to="/ResetLinkPage"><button type="submit"className="w-full border-2 rounded-xl px-3 py-3 mt-6 text-center bg-blue-10 text-white ">Reset Password</button></Link>
         </form>
       </div>
-    </motion.div>
+    </m.div>
   );
 };
 

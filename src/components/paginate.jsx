@@ -6,6 +6,7 @@ import Foundeet from "../assets/Logo.svg"; // Importing the Foundeet logo from a
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"; // Importing React and its hooks (useState, useEffect)
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/20/solid"; // Importing ChevronRightIcon and ChevronLeftIcon from @heroicons/react/20/solid
+import { motion as m, AnimatePresence } from "framer-motion"
 const Paginate = () => {
   // Defining the Paginate component
   const cards = [
@@ -72,15 +73,22 @@ const Paginate = () => {
   return (
     // Return the JSX for the Paginate component
     <div className="flex flex-col items-center h-screen">
-      <div className="flex justify-center items-center relative mt-3">
-        {cards.slice(startIndex, endIndex).map(
-          (
-            card // Slice the cards array based on the current page and map over it
-          ) => (
-            <Card key={card.key} {...card} /> // Render the Card component for each card
-          )
-        )}
-     
+      <div className="flex justify-center items-center relative h-full">
+        <AnimatePresence mode="wait">
+          {cards.slice(startIndex, endIndex).map(
+            (
+              card // Slice the cards array based on the current page and map over it
+            ) => (
+             <m.div  
+             key={card.key}
+             initial={{ opacity: 0.5 }}
+             animate={{ opacity: 1}}
+             exit={{ opacity: 1}}
+             transition={{ duration: 1.75 }}
+             > <Card key={card.key} {...card} /> </m.div> // Render the Card component for each card
+            )
+          )}
+        </AnimatePresence>
       <div className="leading-10 text-slate-3 gap-2 flex absolute left-10 bottom-8">
         {pages.map((page) => (
           <label key={page}>
@@ -97,7 +105,7 @@ const Paginate = () => {
         ))}
       </div>
       <div
-        className="flex justify-center items-center gap-2 absolute top-[668px] left-[334px]"
+        className="flex justify-center items-center gap-2 absolute top-[680px] left-[334px]"
         style={{ width: "205px", height: "41px" }}
       >
         <button

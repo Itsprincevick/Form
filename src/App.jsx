@@ -4,8 +4,8 @@ import RoutesTransition from "./components/RoutesTransition.jsx";
 
 const App = () => {
   return (
-    <div className="h-screen flex justify-center p-2">
-      <Paginate/>
+    <div className=" flex justify-center p-2 pb-5">
+      <Paginate />
       <RoutesTransition/>
     </div>
   );

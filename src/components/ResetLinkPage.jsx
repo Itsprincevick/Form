@@ -4,14 +4,14 @@ import React from "react"; // Importing React from react
 import { Link } from "react-router-dom"; // Importing Link from react-router-dom
 import Message from "../assets/Message.svg"
 import { ChevronLeftIcon } from "@heroicons/react/20/solid";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const ResetLinkPage = () => {
   return (
-    <motion.div className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
+    <m.div className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 1}}
     transition={{duration: 1.5}}
     >
 
@@ -41,7 +41,7 @@ const ResetLinkPage = () => {
         Go back Home
       </Link>
       
-    </motion.div>
+    </m.div>
   );
 };
 

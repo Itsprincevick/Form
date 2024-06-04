@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/16/solid";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const CreateNewPassword = () => {
   const [password, setPassword] = useState("");
@@ -28,11 +28,10 @@ const CreateNewPassword = () => {
   };
 
   return (
-    <motion.div className="text-center w-1/2 flex flex-col items-center  mt-20"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
-    transition={{duration: 1.5}}
+    <m.div className="text-center w-1/2 flex flex-col items-center  mt-20"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 1}}
     >
       <div className=" w-[460px]">
           <h1 className="font-medium text-4xl text-blue-10">
@@ -66,7 +65,7 @@ const CreateNewPassword = () => {
 
         <Link to="/ResetLinkPage"><button className="text-white w-full h-10 bg-blue-10 rounded-xl mt-3" type="submit">Reset Password</button></Link>
       </form>
-    </motion.div>
+    </m.div>
   );
 };
 
