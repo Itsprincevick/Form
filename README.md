@@ -15,7 +15,7 @@ For the reset password page,a simple React component was used which included a h
 This page contains a simple message that informs a user that their attempt to change their password via submitting their email on the Reset Password page was successful.
 
 ## Authors
-- [@Itsprincevick](https://www.github.Itsprincevick)
+- [@Itsprincevick](https://www.github.com/Itsprincevick)
 - [@ChidinmaNwosu](https://www.github.com/ChidinmaNwosu)
 - [@Okezedavid](https://www.github.com/Okezedavid)
 - [@SolomonGrundy-97](https://www.github.com/SolomonGrundy-97)
