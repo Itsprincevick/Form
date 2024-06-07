@@ -52,6 +52,16 @@ const Paginate = () => {
     setTotalPages(Math.ceil(cards.length / 1));
   }, [cards.length, setTotalPages]);
 
+  // modification to change image continously
+  useEffect(() => {
+    const interval = setInterval(()=> {
+      setCurrentPage((prevPage) => (prevPage % totalPages) + 1);
+
+    }, 2000); //change imagae every 3 seconds
+
+    return ()=> clearInterval(interval);
+  }, [totalPages])
+
   const handlePrevClick = () => {
     // Function to handle the previous button click
     if (currentPage > 1) {
