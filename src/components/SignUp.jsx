@@ -10,10 +10,10 @@ function SignUp() {
     <div className="h-screen md:w-1/2 flex" >
       <div className=" md:w-[65%] md:mx-auto md:translate-y-8">
         <m.div
-          initial={{y: "20px" }}
-          animate={{ y: "0" }}
-          exit={{ y: "20px" }}
-          transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }}
+          initial={{y: "20px" }} // Initial state of the component when it is first rendered or about to appear
+          animate={{ y: "0" }}   // Animate to this state when the component appears or is in view
+          exit={{ y: "20px" }}   // State when the component is about to be removed or transitioned out
+          transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }} // Transition Timing
         >
           <h2 className="mt-1 text-center text-4xl font-medium text-blue-10">
             Create an Account
@@ -25,10 +25,10 @@ function SignUp() {
         </m.div>
         <form className="mt-2 space-y-2">
           <m.div 
-            initial={{ y: 20 }}
-            animate={{ y: 0 }}
-            exit={{ y: 20 }}
-            transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }}
+            initial={{ y: 20 }} // Initial state of the component when it is first rendered or about to appear
+            animate={{ y: 0 }}  // Animate to this state when the component appears or is in view
+            exit={{ y: 20 }}    // State when the component is about to be removed or transitioned out
+            transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }} // Transition Timing
           >
             <div className="flex flex-col">
               <label className="text-blue-10 font-semibold">Name</label>
@@ -52,10 +52,10 @@ function SignUp() {
             </div>
           </m.div>
           <m.div
-             initial={{ opacity: 0, y: -20 }}
-             animate={{ opacity: 1, y: 0 }}
-             exit={{ opacity: 0, y: -20 }}
-             transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }}
+             initial={{ opacity: 0, y: -20 }} // Initial state of the component when it is first rendered or about to appear
+             animate={{ opacity: 1, y: 0 }}   // Animate to this state when the component appears or is in view
+             exit={{ opacity: 0, y: -20 }}    // State when the component is about to be removed or transitioned out
+             transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }} // Transition Timing
           >
             <div className="flex flex-col">
               <label className="text-blue-10 font-semibold">Password</label>
@@ -82,10 +82,10 @@ function SignUp() {
           </m.div>
           </form>
           <m.div
-            initial={{ y: -20 }}
-            animate={{ y: 0 }}
-            exit={{ y: -20 }}
-            transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }}
+            initial={{ y: -20 }} // Initial state of the component when it is first rendered or about to appear
+            animate={{ y: 0 }}   // Animate to this state when the component appears or is in view
+            exit={{ y: -20 }}    // State when the component is about to be removed or transitioned out
+            transition={{ duration: 1.5, type: 'tween', ease: 'easeInOut' }} // Transition Timing
           >
             <button
               type="submit"

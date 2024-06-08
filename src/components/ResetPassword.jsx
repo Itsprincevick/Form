@@ -6,10 +6,10 @@ const ResetPassword = () => {
   return (
     <m.div
       className="flex flex-col items-center md:w-1/2 h-screen text-center relative"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{ opacity: 0 }} // Initial state of the component when it is first rendered or about to appear
+      animate={{ opacity: 1 }} // Animate to this state when the component appears or is in view
+      exit={{ opacity: 1 }}    // State when the component is about to be removed or transitioned out
+      transition={{ duration: 1.5 }} // Transition Timing
     >
       <div className="mt-20 w-full max-w-sm sm:max-w-sm">
         <Link to="/">
@@ -39,10 +39,10 @@ const ResetPassword = () => {
             <m.button
               type="submit"
               className="w-full border-2 rounded-xl px-3 py-3 mt-6 text-center bg-blue-10 text-white "
-              initial={{ y: "50px" }}
-              animate={{ y: 0 }}
-              exit={{ y: 0 }}
-              transition={{ duration: 1.5 }}
+              initial={{ y: "50px" }} // Initial state of the component when it is first rendered or about to appear
+              animate={{ y: 0 }}      // Animate to this state when the component appears or is in view
+              exit={{ y: 0 }}         // State when the component is about to be removed or transitioned out
+              transition={{ duration: 1.5 }}  // Transition Timing
             >
               Reset Password
             </m.button>

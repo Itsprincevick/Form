@@ -10,10 +10,10 @@ const SignIn = () => {
     <div className="h-screen md:w-1/2 flex items-center transition-opacity">
       <div className=" md:w-[65%] md:mx-auto">
         <m.div
-          initial={{ y: "-20px" }}
-          animate={{ y: "0" }}
-          exit={{ y: "-20px" }}
-          transition={{ duration: 1.5, type: "tween", ease: "easeInOut" }}
+          initial={{ y: "-20px" }}  // Initial state of the component when it is first rendered or about to appear
+          animate={{ y: "0" }}      // Animate to this state when the component appears or is in view
+          exit={{ y: "-20px" }}     // State when the component is about to be removed or transitioned out
+          transition={{ duration: 1.5, type: "tween", ease: "easeInOut" }}  // Transition Timing
         >
           <h3 className=" space-y-56 text-blue-10 text-4xl text-center font-medium mt-8">
             Welcome Back
@@ -61,10 +61,10 @@ const SignIn = () => {
           </m.div>
         </form>
         <m.div
-          initial={{ y: "20px" }}
-          animate={{ y: "0px" }}
-          exit={{ y: 0 }}
-          transition={{ duration: 1.5 }}
+          initial={{ y: "20px" }} // Initial state of the component when it is first rendered or about to appear
+          animate={{ y: "0px" }}  // Animate to this state when the component appears or is in view
+          exit={{ y: 0 }} // State when the component is about to be removed or transitioned out
+          transition={{ duration: 1.5 }}  // Transition Timing
         >
           <button
             type="submit"
