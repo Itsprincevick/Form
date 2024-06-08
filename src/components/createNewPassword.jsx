@@ -1,8 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/16/solid";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const CreateNewPassword = () => {
   const [password, setPassword] = useState("");
@@ -28,21 +27,21 @@ const CreateNewPassword = () => {
   };
 
   return (
-    <motion.div className="text-center w-1/2 flex flex-col items-center  mt-20"
+    <m.div className="text-center md:w-1/2 flex flex-col items-center  mt-20"
     initial={{opacity: 0, x:0}}
     animate={{opacity: 1, x: 0}}
     exit={{opacity: 0.75, x: 0}}
     transition={{duration: 1.5}}
     >
-      <div className=" w-[460px]">
+      <div className="w-full max-w-sm sm:max-w-sm">
           <h1 className="font-medium text-4xl text-blue-10">
             Create a New Password
           </h1>
-          <p className="text-xs text-grey-4 font-normal mt-2">
+          <p className="text-xs text-grey-4 font-normal mt-2 w-full">
             Bold underline draft ipsum background. Background plugin figja
           </p>
       </div>
-      <form onSubmit={handleSubmit} className="flex flex-col text-blue-10 mt-9 w-[460px] ">
+      <form onSubmit={handleSubmit} className="flex flex-col text-blue-10 mt-9 w-full ">
         <label className="block text-left relative">
           Password
           <input className="w-full border-grey-3 border rounded-xl h-10 my-2 p-3 text-sm outline-none"
@@ -64,9 +63,9 @@ const CreateNewPassword = () => {
            <LockClosedIcon className="w-4 h-4 text-grey-3 absolute right-2 bottom-5"/>
         </label>
 
-        <Link to="/ResetLinkPage"><button className="text-white w-full h-10 bg-blue-10 rounded-xl mt-3" type="submit">Reset Password</button></Link>
+        <button className="text-white w-full h-10 bg-blue-10 rounded-xl mt-3" type="submit">Reset Password</button>
       </form>
-    </motion.div>
+    </m.div>
   );
 };
 

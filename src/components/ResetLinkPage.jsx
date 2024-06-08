@@ -8,30 +8,28 @@ import { motion } from "framer-motion";
 
 const ResetLinkPage = () => {
   return (
-    <motion.div className="flex flex-col justify-center items-center w-1/2 h-screen text-center relative gap-5"
-    initial={{opacity: 0, x:0}}
-    animate={{opacity: 1, x: 0}}
-    exit={{opacity: 0.75, x: 0}}
+    <motion.div className="flex flex-col md:justify-center items-center md:w-1/2 h-screen text-center relative gap-5"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 1}}
     transition={{duration: 1.5}}
     >
 
       {/*Tot-left back Icon... */}
       <Link to="/ResetPassword">
-       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-1 left-12" />
+       <ChevronLeftIcon className="h-10 w-10 text-[#191919] absolute top-1 left-0" />
       </Link>
 
       {/* message icon... */}
      
-     <img src={Message} alt="Message logo" className="w-[200px] h-[136px]"/>
+     <img src={Message} alt="Message logo" className="mt-12 w-[200px] h-[136px]"/>
 
 
        {/* Text part.. */}
       <h4 className="text-[39px] font-medium text-blue-10">Reset Link Sent</h4>
-      <p className="font-normal text-sm text-[#757575]">
+      <p className="font-normal text-xs md:text-sm text-[#757575] md:w-[460px]">
         Thank you for submitting your email address to reset your password. 
-        <br/>
         Your email has been successfully verified, and a password reset link 
-        <br/>
         has been sent to the email address associated with your account.
       </p>
        

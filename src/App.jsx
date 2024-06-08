@@ -4,7 +4,7 @@ import RoutesTransition from "./components/RoutesTransition.jsx";
 
 const App = () => {
   return (
-    <div className="h-screen flex justify-center p-2">
+    <div className="h-auto flex gap-5 justify-center p-4">
       <Paginate/>
       <RoutesTransition/>
     </div>
