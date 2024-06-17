@@ -57,7 +57,7 @@ const Paginate = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prevPage) => (prevPage % totalPages) + 1);
-    }, 2000); //change imagae every 3 seconds
+    }, 3000); //change imagae every 3 seconds
 
     return () => clearInterval(interval);
   }, [totalPages]);
@@ -81,7 +81,7 @@ const Paginate = () => {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
   return (
     // Return the JSX for the Paginate component
-    <div className="hidden md:flex flex-col items-center">
+    <div className="hidden lg:flex flex-col items-center">
       <div className="flex justify-center items-center relative">
         <AnimatePresence mode="wait">
           {cards.slice(startIndex, endIndex).map(

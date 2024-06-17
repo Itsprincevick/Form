@@ -7,8 +7,8 @@ import AccessButtons from "../components/AccessButtons";
 
 function SignUp() {
   return (
-    <div className="h-screen md:w-1/2 flex" >
-      <div className=" md:w-[65%] md:mx-auto md:translate-y-8">
+    <div className="h-screen md:w-1/2 flex items-center" >
+      <div className=" lg:w-[65%] md:mx-auto md:translate-y-8">
         <m.div
           initial={{y: "20px" }} // Initial state of the component when it is first rendered or about to appear
           animate={{ y: "0" }}   // Animate to this state when the component appears or is in view

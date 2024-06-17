@@ -54,7 +54,7 @@ const CreateNewPassword = () => {
    */
   return (
     <m.div
-      className="text-center md:w-1/2 flex flex-col items-center  mt-20"
+      className="h-screen text-center md:w-1/2 max-w-[375px] flex flex-col items-center justify-center"
       initial={{ opacity: 0, x: 0 }}  // Initial state of the component when it is first rendered or about to appear
       animate={{ opacity: 1, x: 0 }}  // Animate to this state when the component appears or is in view
       exit={{ opacity: 0.75, x: 0 }}  // State when the component is about to be removed or transitioned out
