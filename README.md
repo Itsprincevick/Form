@@ -76,6 +76,6 @@ Project Link: [https://github.com/Foundeet/Foundeet-form-Page]
 ## Acknowledgement
 
 Special thanks to:
-- [Your Name] for the initial idea and guidance.
+- @Loveday for the initial idea and guidance.
 - [Contributor's Name] for their valuable contributions.
 
