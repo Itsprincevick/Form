@@ -1,25 +1,81 @@
-# Foundeet-Form-Page
-This repository contains the desktop and mobile view for the Signup/Signin page,Reset password page and other pages that a user will interact with before logging into their Foundeet account.
-## Breakdown of the Form-Page
-React.js(Javascript) was used used to build the pages and Tailwind.css was used for the styling.
-### Signup/Signin Page
-Seperate components were used for the signin and signup page and then,a link tag was used to bind the two components together in order to navigate through both of them on thesame page.
-Icons used on the two pages were imported from a heroicon npm package which was installed directly into the project.
-#### Command to install heroicons
-```http
-  npm install heroicons
-```
-### Reset Password Page
-For the reset password page,a simple React component was used which included a h1 tag, an input tag and a reset password button with all the necessary write ups.
-### Reset Link Confirmation Page
-This page contains a simple message that informs a user that their attempt to change their password via submitting their email on the Reset Password page was successful.
+## Table of Contents
+- [Project Description](#project-description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Coding Standard](#coding-standard)
+- [Pull Request](#pull-request)
+- [License](#license)
+- [Contact](#contact)
+` [Aknowledgement](#acknowledgement)
 
-## Authors
-- [@Itsprincevick](https://www.github.com/Itsprincevick)
-- [@ChidinmaNwosu](https://www.github.com/ChidinmaNwosu)
-- [@Okezedavid](https://www.github.com/Okezedavid)
-- [@SolomonGrundy-97](https://www.github.com/SolomonGrundy-97)
-- [@Faateeha](https://www.github.com/Faateeha)
-- [@Rolalove](https://www.github.com/Rolalove)
-- [@Recheal-cloud](https://www.github.com/Recheal-cloud)
-- [@7-Iynxx](https://www.github.com/7-Iynxx)
+
+
+# Project Name
+
+Foundeet Form
+
+## Description
+
+This project aims to create a user-friendly form for Foundeet, allowing users to easily submit their information.
+
+## Features
+
+- Simple and intuitive user interface
+- Validation of user inputs
+- Secure data storage
+- Error handling and feedback
+
+## Installation
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the required dependencies using `npm install`.
+
+## Usage
+
+1. Run the application using `npm start`.
+2. Access the form in your web browser at `http://localhost:5173`.
+
+## Contributing
+
+1. Fork or clone the project
+2. Create your feature branch:
+    ```Bash
+    git checkout -b feature/your-feature
+3. Commit your changes:
+    git commit -m "Add some feature"    
+4. Push to the branch:
+    git push origin feature/your-feature
+5. Open a pull request
+
+## Coding Standard
+
+1. Follow the existing code style.
+2. Write clear and concise comments.
+
+## Pull Request
+
+1. Ensure your code works and passes tests.
+2. Open a pull request with a clear description.
+3. Wait for review and feedback.
+
+## License
+
+This repository is not open-source and is licensed exclusively to Foundeet. No part of this repository may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of Foundeet.
+
+see `LICENCE` for more information
+
+
+## Contact
+If you have any questions or need help, feel free to reach out to me at [mailto:izprincevick@gmail.com]
+
+Project Link: [https://github.com/Foundeet/Foundeet-form-Page]
+
+## Acknowledgement
+
+Special thanks to:
+- [Your Name] for the initial idea and guidance.
+- [Contributor's Name] for their valuable contributions.
+

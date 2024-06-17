@@ -6,13 +6,13 @@ import Foundeet from "../assets/Logo.svg"; // Importing the Foundeet logo from a
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"; // Importing React and its hooks (useState, useEffect)
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/20/solid"; // Importing ChevronRightIcon and ChevronLeftIcon from @heroicons/react/20/solid
-import { motion as m, AnimatePresence } from "framer-motion"
+import { motion as m, AnimatePresence } from "framer-motion";
 const Paginate = () => {
   // Defining the Paginate component
   const cards = [
     // Define an array of cards
     {
-      key: 1, 
+      key: 1,
       image: Bulb, // Image for the first card
       logo: Foundeet, // Logo for the first card
       title: "Device flows stroke frame library flows ellipse", // Title for the first card
@@ -53,6 +53,15 @@ const Paginate = () => {
     setTotalPages(Math.ceil(cards.length / 1));
   }, [cards.length, setTotalPages]);
 
+  // modification to change image continously
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPage((prevPage) => (prevPage % totalPages) + 1);
+    }, 3000); //change imagae every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [totalPages]);
+
   const handlePrevClick = () => {
     // Function to handle the previous button click
     if (currentPage > 1) {
@@ -72,74 +81,77 @@ const Paginate = () => {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
   return (
     // Return the JSX for the Paginate component
-    <div className="flex flex-col items-center h-screen">
-      <div className="flex justify-center items-center relative h-full">
+    <div className="hidden lg:flex flex-col items-center">
+      <div className="flex justify-center items-center relative">
         <AnimatePresence mode="wait">
           {cards.slice(startIndex, endIndex).map(
             (
               card // Slice the cards array based on the current page and map over it
             ) => (
-             <m.div  
-             key={card.key}
-             initial={{ opacity: 0.5 }}
-             animate={{ opacity: 1}}
-             exit={{ opacity: 1}}
-             transition={{ duration: 1.75 }}
-             > <Card key={card.key} {...card} /> </m.div> // Render the Card component for each card
+              <m.div
+                key={card.key}
+                initial={{ opacity: 0.5 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 1 }}
+                transition={{ duration: 1.75 }}
+              >
+                {" "}
+                <Card key={card.key} {...card} />{" "}
+              </m.div> // Render the Card component for each card
             )
           )}
         </AnimatePresence>
-      <div className="leading-10 text-slate-3 gap-2 flex absolute left-10 bottom-8">
-        {pages.map((page) => (
-          <label key={page}>
-            <input
-              className="border-white"
-              type="radio"
-              name="page"
-              value={page}
-              checked={currentPage === page}
-              onChange={() => onPageChange(page)}
+        <div className="leading-10 text-slate-3 gap-2 flex absolute left-10 bottom-8">
+          {pages.map((page) => (
+            <label key={page}>
+              <input
+                className="border-white"
+                type="radio"
+                name="page"
+                value={page}
+                checked={currentPage === page}
+                onChange={() => onPageChange(page)}
+              />
+              <span className="sr-only">{page}</span>
+            </label>
+          ))}
+        </div>
+        <div
+          className="flex justify-center items-center gap-2 absolute top-[668px] left-[334px]"
+          style={{ width: "205px", height: "41px" }}
+        >
+          <button
+            className="rounded-3xl py-3 px-2 bg-grey-8 cursor-pointer hover:bg-blue-10"
+            style={{
+              width: "118px",
+              height: "51px",
+              transition: "background-color 0.5s",
+            }}
+            onClick={handlePrevClick}
+            disabled={currentPage === 1}
+          >
+            <ChevronLeftIcon
+              className="text-white mx-auto "
+              style={{ width: "20px", height: "20px" }}
             />
-            <span className="sr-only">{page}</span>
-          </label>
-        ))}
-      </div>
-      <div
-        className="flex justify-center items-center gap-2 absolute top-[680px] left-[334px]"
-        style={{ width: "205px", height: "41px" }}
-      >
-        <button
-          className="rounded-3xl py-3 px-2 bg-grey-8 cursor-pointer hover:bg-blue-10"
-          style={{
-            width: "118px",
-            height: "51px",
-            transition: "background-color 0.5s",
-          }}
-          onClick={handlePrevClick}
-          disabled={currentPage === 1}
-        >
-          <ChevronLeftIcon
-            className="text-white mx-auto "
-            style={{ width: "20px", height: "20px" }}
-          />
-        </button>
+          </button>
 
-        <button
-          className="rounded-3xl py-3 px-2 bg-grey-8 cursor-pointer hover:bg-blue-10"
-          style={{
-            width: "118px",
-            height: "51px",
-            transition: "background-color 0.5s",
-          }}
-          onClick={handleNextClick}
-          disabled={currentPage === totalPages}
-        >
-          <ChevronRightIcon
-            className="text-white mx-auto "
-            style={{ width: "20px", height: "20px" }}
-          />
-        </button>
-      </div>
+          <button
+            className="rounded-3xl py-3 px-2 bg-grey-8 cursor-pointer hover:bg-blue-10"
+            style={{
+              width: "118px",
+              height: "51px",
+              transition: "background-color 0.5s",
+            }}
+            onClick={handleNextClick}
+            disabled={currentPage === totalPages}
+          >
+            <ChevronRightIcon
+              className="text-white mx-auto "
+              style={{ width: "20px", height: "20px" }}
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
