@@ -71,7 +71,7 @@ see `LICENCE` for more information
 ## Contact
 If you have any questions or need help, feel free to reach out to me at [mailto:izprincevick@gmail.com]
 
-Project Link: [https://github.com/Foundeet/Foundeet-form-Page]
+Project Link: [https://github.com/Itsprincevick/Form.git]
 
 ## Acknowledgement
 
