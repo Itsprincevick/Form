@@ -63,11 +63,10 @@ This project aims to create a user-friendly form for Foundeet, allowing users to
 ## Contact
 If you have any questions or need help, feel free to reach out to me at [mailto:izprincevick@gmail.com]
 
-Project Link: [https://github.com/Foundeet/Foundeet-form-Page]
+Project Link: [https://github.com/Itsprincevick/Form.git]
 
 ## Acknowledgement
 
 Special thanks to:
-- [Loveday Ikegbulam](https://github.com/orgs/Foundeet/people/lovedayikegbulam) for the initial idea and guidance.
-- [Victor Onipe](https://github.com/orgs/Foundeet/people/Itsprincevick), [ChidinmaNwosu](https://github.com/orgs/Foundeet/people/ChidinmaNwosu), [David Okeze](https://github.com/orgs/Foundeet/people/Okezedavid), [Omotoso Abosede](https://github.com/orgs/Foundeet/people/Racheal-cloud), [Kofoworola Shonuyi](https://github.com/orgs/Foundeet/people/Rolalove), [Adeyemi Fathia](https://github.com/orgs/Foundeet/people/Faateeha), [Ayo](https://github.com/orgs/Foundeet/people/7-lynxx), [Uzoma Solomon](https://github.com/orgs/Foundeet/people/SolomonGrundy-97), [Ifeanyi](https://github.com/orgs/Foundeet/people/ifeanyiagujekwu), [Olakunle Hassan](https://github.com/orgs/Foundeet/people/kaylezy) for their valuable contributions.
+[ChidinmaNwosu](https://github.com/orgs/Foundeet/people/ChidinmaNwosu), [David Okeze](https://github.com/orgs/Foundeet/people/Okezedavid), [Omotoso Abosede](https://github.com/orgs/Foundeet/people/Racheal-cloud), [Kofoworola Shonuyi](https://github.com/orgs/Foundeet/people/Rolalove), [Adeyemi Fathia](https://github.com/orgs/Foundeet/people/Faateeha), [Ayo](https://github.com/orgs/Foundeet/people/7-lynxx), [Uzoma Solomon](https://github.com/orgs/Foundeet/people/SolomonGrundy-97), [Ifeanyi](https://github.com/orgs/Foundeet/people/ifeanyiagujekwu), [Olakunle Hassan](https://github.com/orgs/Foundeet/people/kaylezy) for their valuable contributions.
 
