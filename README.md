@@ -6,7 +6,6 @@
 - [Contributing](#contributing)
 - [Coding Standard](#coding-standard)
 - [Pull Request](#pull-request)
-- [License](#license)
 - [Contact](#contact)
 ` [Aknowledgement](#acknowledgement)
 
@@ -60,13 +59,6 @@ This project aims to create a user-friendly form for Foundeet, allowing users to
 1. Ensure your code works and passes tests.
 2. Open a pull request with a clear description.
 3. Wait for review and feedback.
-
-## License
-
-This repository is not open-source and is licensed exclusively to Foundeet. No part of this repository may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of Foundeet.
-
-see `LICENCE` for more information
-
 
 ## Contact
 If you have any questions or need help, feel free to reach out to me at [mailto:izprincevick@gmail.com]
